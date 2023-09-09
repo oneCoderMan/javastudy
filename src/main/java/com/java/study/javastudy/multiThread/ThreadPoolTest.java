@@ -6,6 +6,7 @@ import com.java.study.javastudy.model.Person;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Callable;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
@@ -18,10 +19,19 @@ import static com.java.study.javastudy.multiThread.ThreadPool.TEST_EXECUTOR;
 public class ThreadPoolTest {
     public static void main(String[] args) {
         List<Person> personList = queryPerson();
-        System.out.println("end Main");
-        System.out.println("all" + personList);
+        System.out.println("end Main2");
+        System.out.println("all1" + personList);
+        System.out.println("========");
+        List<Person> personList2 = queryPerson2();
+        System.out.println("end Main2");
+        System.out.println("all2" + personList2);
     }
 
+    /**
+     * 提交作业方式1
+     * 自己控制等待
+     * @return
+     */
     public static List<Person> queryPerson() {
         List<Person> re = new ArrayList<>();
         List<Future<List<Person>>> futures = new ArrayList<>();
@@ -55,6 +65,30 @@ public class ThreadPoolTest {
         System.out.println("all the people has got");
         return re;
     }
+
+    /**
+     * 交给线程池控制
+     * @return
+     */
+    public static List<Person> queryPerson2() {
+        List<Person> re = new ArrayList<>();
+        List<Callable<List<Person>>> queryTask = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
+            int index = i;
+            queryTask.add(() -> doQuery(index));
+        }
+        try {
+            List<Future<List<Person>>> futuresResult = TEST_EXECUTOR.invokeAll(queryTask);
+            for (int i = 0; i < futuresResult.size(); i++) {
+                List<Person> people = futuresResult.get(i).get(1000, TimeUnit.MILLISECONDS);
+                re.addAll(people);
+            }
+        } catch (Exception e) {
+            // deal
+        }
+        return re;
+    }
+
 
     private static List<Person> doQuery(int i) {
         System.out.println("start to query people " + i);
