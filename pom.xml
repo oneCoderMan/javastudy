@@ -27,6 +27,18 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.12</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.github.phantomthief</groupId>
+			<artifactId>more-lambdas</artifactId>
+			<version>0.1.54</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
