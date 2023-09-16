@@ -9,7 +9,9 @@
    [code](src/main/java/com/java/study/javastudy/multiThread/CompletableFutureTest.java)
    [简单教学](https://www.liaoxuefeng.com/wiki/1252599548343744/1306581182447650)
 
-
+# 各种工具类
+* [Json解析的工具类](src/main/java/com/java/study/javastudy/utils/JsonUtil.java)
+* [Gson库解析Json](src/main/java/com/java/study/javastudy/utils/GsonUtil.java)
 # REF
 1. readMe工具：https://github.com/ekalinin/github-markdown-toc
 
