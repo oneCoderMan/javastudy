@@ -12,6 +12,8 @@
 # 各种工具类
 * [Json解析的工具类](src/main/java/com/java/study/javastudy/utils/JsonUtil.java)
 * [Gson库解析Json](src/main/java/com/java/study/javastudy/utils/GsonUtil.java)
+* [Retry重试工具类](src/main/java/com/java/study/javastudy/utils/RetryUtil.java)
+
 # REF
 1. readMe工具：https://github.com/ekalinin/github-markdown-toc
 

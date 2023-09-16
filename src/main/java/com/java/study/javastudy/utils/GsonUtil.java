@@ -15,6 +15,11 @@ import java.util.Map;
  * @Author： yijun
  * @DATE: 2023/9/16 17:35
  * @Description
+ * <dependency>
+ * 			<groupId>com.google.code.gson</groupId>
+ * 			<artifactId>gson</artifactId>
+ * 			<version>2.8.9</version>
+ * 		</dependency>
  */
 public class GsonUtil {
     private static final Logger LOGGER = LoggerFactory.getLogger(JsonUtil.class);
