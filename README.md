@@ -14,6 +14,7 @@
 * [Gson库解析Json](src/main/java/com/java/study/javastudy/utils/GsonUtil.java)
 * [Retry重试工具类](src/main/java/com/java/study/javastudy/utils/RetryUtil.java)
 * [LocalDateTimeUtil工具类](src/main/java/com/java/study/javastudy/utils/LocalDateTimeUtil.java)
+* [redis分布式锁](src/main/java/com/java/study/javastudy/middleware/redis/RedisLockService.java)
 
 # ID生成器
 * 参考文章<br>

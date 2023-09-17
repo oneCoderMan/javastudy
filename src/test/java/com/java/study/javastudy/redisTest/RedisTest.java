@@ -1,6 +1,7 @@
 package com.java.study.javastudy.redisTest;
 
 import com.java.study.javastudy.middleware.redis.RedisClient;
+import com.java.study.javastudy.middleware.redis.RedisLockService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -22,10 +23,45 @@ public class RedisTest {
     @Autowired
     private RedisClient redisOpService;
 
+    @Autowired
+    private RedisLockService redisLockService;
+
     @Test
     public void test() {
         redisOpService.saveStr("test", "yijun");
         String test = redisOpService.getStr("test");
         LOGGER.info("value from redis: {}", test);
+    }
+
+    @Test
+    public void testLock() throws InterruptedException {
+        String name = "lockTest2";
+        boolean lock = redisLockService.tryLock(name, 1000 * 600);
+        if (lock) {
+            System.out.println("===get redis lock");
+        } else {
+            System.out.println("=== not get redis lock");
+        }
+        System.out.println("sleep ==");
+        Thread.sleep(5000);
+        boolean lock2 = redisLockService.tryLock(name, 1000 * 600);
+        if (lock2) {
+            System.out.println("===get redis lock");
+        } else {
+            System.out.println("=== not get redis lock");
+        }
+        Thread.sleep(5000);
+        System.out.println("release lock ==");
+        redisLockService.releaseLock(name);
+        Thread.sleep(5000);
+        System.out.println("continue to get lock ==");
+        boolean lock3 = redisLockService.tryLock(name, 1000 * 600);
+        if (lock3) {
+            System.out.println("===get redis lock");
+        } else {
+            System.out.println("=== not get redis lock");
+        }
+
+
     }
 }
