@@ -15,6 +15,17 @@
 * [Retry重试工具类](src/main/java/com/java/study/javastudy/utils/RetryUtil.java)
 * [LocalDateTimeUtil工具类](src/main/java/com/java/study/javastudy/utils/LocalDateTimeUtil.java)
 
+# ID生成器
+* 参考文章<br>
+ [5种全局ID生成方式](https://cloud.tencent.com/developer/article/1884037) <br>
+ [Snowflake算法](https://pdai.tech/md/algorithm/alg-domain-id-snowflake.html)
+* mysql自增id，可以自定义步长
+* 雪花id <br>
+  [雪花id实现](src/main/java/com/java/study/javastudy/idGenerator/snowFlake/SnowflakeIdGenerator.java)
+* UUID <br>
+  [UUID实现](src/main/java/com/java/study/javastudy/idGenerator/snowFlake/UuidGenerator.java)
+
+
 # REF
 1. readMe工具：https://github.com/ekalinin/github-markdown-toc
 
