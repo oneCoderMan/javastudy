@@ -1,6 +1,6 @@
 package com.java.study.javastudy.redisTest;
 
-import com.java.study.javastudy.middleware.es.RedisClient;
+import com.java.study.javastudy.middleware.redis.RedisClient;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
