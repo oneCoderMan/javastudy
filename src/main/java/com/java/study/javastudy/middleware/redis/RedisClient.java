@@ -1,4 +1,4 @@
-package com.java.study.javastudy.middleware.es;
+package com.java.study.javastudy.middleware.redis;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.data.redis.core.StringRedisTemplate;
