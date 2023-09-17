@@ -25,7 +25,11 @@
 * UUID <br>
   [UUID实现](src/main/java/com/java/study/javastudy/idGenerator/snowFlake/UuidGenerator.java)
 
+# 中间件学习
 
+## Redis
+ * 使用StringRedisTemplate操作 [code](src/main/java/com/java/study/javastudy/middleware/es/RedisClient.java)
+ * 使用其它方法操作
 # REF
 1. readMe工具：https://github.com/ekalinin/github-markdown-toc
 
