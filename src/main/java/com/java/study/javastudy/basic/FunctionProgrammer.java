@@ -28,6 +28,7 @@ public class FunctionProgrammer {
 //        functionProgrammer.testConsumer();
 //        functionProgrammer.testFunction();
         functionProgrammer.testPredict();;
+        functionProgrammer.testFunction();
     }
 
     /**
