@@ -18,6 +18,7 @@
 		<module>test</module>
 		<module>basicTech</module>
 		<module>common</module>
+		<module>notes</module>
 	</modules>
 	<properties>
 		<java.version>1.8</java.version>

@@ -1,4 +1,4 @@
-package com.java.study.multiThread;
+package com.java.study.multithread;
 
 import com.java.study.model.Person;
 import lombok.extern.java.Log;
@@ -13,6 +13,7 @@ import static com.java.study.Mock.MockPeople.mockPeople;
  * CompletableFuture，它针对Future做了改进，可以传入回调对象，
  * 当异步任务完成或者发生异常时，自动调用回调对象的回调方法。
  * 需要保证主线程存活
+ * @author codersim
  */
 @Log
 public class CompletableFutureTest {
@@ -44,7 +45,9 @@ public class CompletableFutureTest {
         });
     }
 
-    // 多个CompletableFuture串行执行
+    /**
+     * 多个CompletableFuture串行执行
+     */
     public static void serialExecution() {
         // 第一个任务
         CompletableFuture<Person> cfQuery = CompletableFuture.supplyAsync(() -> {

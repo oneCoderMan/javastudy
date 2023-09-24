@@ -5,8 +5,8 @@
 * 函数式编程 [code](basicTech/src/main/java/com/java/study/basic/FunctionProgrammer.java)
 
 # 多线程编程
-* 提交任务，等待所有任务都执行完在获取到结果 [code](basicTech/src/main/java/com/java/study/multiThread/ThreadPoolTest.java)
-* 使用CompletableFuture进行线程编排，异步流程控制 [code](basicTech/src/main/java/com/java/study/multiThread/CompletableFutureTest.java)
+* 提交任务，等待所有任务都执行完在获取到结果 [code](basicTech/src/main/java/com/java/study/multithread/ThreadPoolTest.java)
+* 使用CompletableFuture进行线程编排，异步流程控制 [code](basicTech/src/main/java/com/java/study/multithread/CompletableFutureTest.java)
    <br> [简单教学](https://www.liaoxuefeng.com/wiki/1252599548343744/1306581182447650)
 
 # 各种工具类
@@ -31,6 +31,14 @@
 ## Redis
  * 使用StringRedisTemplate操作 [code](basicTech/src/main/java/com/java/study/middleware/redis/RedisClient.java)
  * 使用其它方法操作
+
+# 设计模式
+## 一些技巧
+  * 消除多余的if-else [策略模式code](basicTech/src/main/java/com/java/study/designpattern/somtech/OptStrategyContext.java)
+
+## 策略模式
+
+
 # REF
 1. readMe工具：https://github.com/ekalinin/github-markdown-toc
 

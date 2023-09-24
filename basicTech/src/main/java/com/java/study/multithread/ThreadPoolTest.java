@@ -1,4 +1,4 @@
-package com.java.study.multiThread;
+package com.java.study.multithread;
 
 import com.github.phantomthief.concurrent.MoreFutures;
 import com.github.phantomthief.concurrent.TryWaitFutureUncheckedException;
@@ -11,7 +11,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 import static com.java.study.Mock.MockPeople.mockPeople;
-import static com.java.study.multiThread.ThreadPool.TEST_EXECUTOR;
+import static com.java.study.multithread.ThreadPool.TEST_EXECUTOR;
 
 
 /**
