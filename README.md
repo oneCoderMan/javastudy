@@ -38,6 +38,8 @@
 
 ## 策略模式
 
+# JavaCore
+[注解使用](notes/src/main/resources/javaCore/annotation.md)
 
 # REF
 1. readMe工具：https://github.com/ekalinin/github-markdown-toc
