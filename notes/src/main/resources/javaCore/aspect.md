@@ -8,7 +8,7 @@ AOP（Aspect Oriented Programming），面向切面思想，是Spring的三大�
 具体AOP体系如下图所示：
 
 
-![aspect](pics/aspect.png)
+![aspect](https://github.com/oneCoderMan/javastudy/blob/2cdccd42d38477dff0e34ed2008d99d4b1453c64/notes/src/main/resources/pics/aspect.png)
 <br>
 <img src="pics/aspect.png">
 
