@@ -23,4 +23,4 @@ AOP（Aspect Oriented Programming），面向切面思想，是Spring的三大�
 
 
 # REF
-[切面AOP优雅的实现权限校验](https://mp.weixin.qq.com/s/DjWq1Kw9kPMlt3l_3HDK0Q?_blank)
+[切面AOP优雅的实现权限校验](https://mp.weixin.qq.com/s/DjWq1Kw9kPMlt3l_3HDK0Q){:target="_blank}
