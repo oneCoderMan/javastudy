@@ -9,8 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Description
  */
 @SpringBootApplication
-public class basicTechApplication {
+public class BasicTechApplication {
     public static void main(String[] args) {
-        SpringApplication.run(basicTechApplication.class, args);
+        SpringApplication.run(BasicTechApplication.class, args);
     }
 }

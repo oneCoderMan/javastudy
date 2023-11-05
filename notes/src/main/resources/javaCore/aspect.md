@@ -21,6 +21,19 @@ AOP（Aspect Oriented Programming），面向切面思想，是Spring的三大�
 
 # 0x01 切面实例
 
+## Example1
+需求：所有的get请求被调用前在控制台输出一句"get请求的advice触发了"。
+[实现代码](../../../../../basicTech/src/main/java/com/java/study/basic/aspect/example1/LogAdvice.java)
+[测试代码](../../../../../basicTech/src/main/java/com/java/study/controller/aspect/AspectTestController.java)
+
+## Example2
+需求：自定义一个注解PermissionsAnnotation，创建一个切面类，切点设置为拦截所有标注PermissionsAnnotation的方法，截取到接口的参数，进行简单的权限校验，将PermissionsAnnotation标注在测试接口类的测试接口test上
+
+实现
+* 定义注解 [code](../../../../../basicTech/src/main/java/com/java/study/basic/aspect/example2/PermissionAnnotation.java)
+* 定义切面类 [code](../../../../../basicTech/src/main/java/com/java/study/basic/aspect/example2/PermissionFirstAdvice.java)
+* 创建接口 [code](../../../../../basicTech/src/main/java/com/java/study/controller/aspect/AspectTestController.java)
+
 
 # REF
-[切面AOP优雅的实现权限校验](https://mp.weixin.qq.com/s/DjWq1Kw9kPMlt3l_3HDK0Q){:target="_blank}
+[切面AOP优雅的实现权限校验](https://mp.weixin.qq.com/s/DjWq1Kw9kPMlt3l_3HDK0Q)
