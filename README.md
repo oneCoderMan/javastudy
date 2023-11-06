@@ -1,9 +1,6 @@
 # 仓库介绍
 记录本人学习技术的一些笔记，包括不局限于Java
 
-# Java基础
-* 函数式编程 [code](basicTech/src/main/java/com/java/study/basic/FunctionProgrammer.java)
-
 # 多线程编程
 * 提交任务，等待所有任务都执行完在获取到结果 [code](basicTech/src/main/java/com/java/study/multithread/ThreadPoolTest.java)
 * 使用CompletableFuture进行线程编排，异步流程控制 [code](basicTech/src/main/java/com/java/study/multithread/CompletableFutureTest.java)
@@ -32,15 +29,23 @@
  * 使用StringRedisTemplate操作 [code](basicTech/src/main/java/com/java/study/middleware/redis/RedisClient.java)
  * 使用其它方法操作
 
+## MySql
+
+* [安装和简介](notes/src/main/resources/mysql/intro.md)
+
 # 设计模式
 ## 一些技巧
   * 消除多余的if-else [策略模式code](basicTech/src/main/java/com/java/study/designpattern/somtech/OptStrategyContext.java)
 
 ## 策略模式
 
-# Java+Spring
+# Java+Spring基础
+[函数式编程](basicTech/src/main/java/com/java/study/basic/FunctionProgrammer.java) <br>
 [注解使用](notes/src/main/resources/javaCore/annotation.md) <br>
 [切面](notes/src/main/resources/javaCore/aspect.md)
+
+# 文章推荐
+[20篇改变世界的白皮书](notes/src/main/resources/paper/20paper.md)
 
 # REF
 1. readMe工具：https://github.com/ekalinin/github-markdown-toc
