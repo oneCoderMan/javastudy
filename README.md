@@ -32,6 +32,7 @@
 ## MySql
 
 * [安装和原理](notes/src/main/resources/mysql/intro.md)
+* [常用命令](notes/src/main/resources/mysql/cmd.md)
 
 # 设计模式
 ## 一些技巧
