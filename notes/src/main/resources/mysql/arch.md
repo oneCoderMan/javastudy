@@ -41,6 +41,54 @@ MySQL通过分析器知道了你要做什么，通过优化器知道了该怎么
 
 过程：验证表的查询权限 -> 打开表 -> 调用引擎提供的接口进行数据行的读取 -> 讲符合条件的数据组装 -> 返回数据给客户端
 
+# 日志模块
+## redo log
+所在层次：redo log是InnoDB存储引擎特有的
+
+作用：提供再写入操作，恢复提交事务修改的页操作，用来保证事务的**持久性**
+
+记录数据：记录的是"物理级别"上的页修改操作，比如页号xx、偏移量yyy写入了’zzz’数据。主要为了保证数据的可靠性;
+
+如果每一次的更新操作都需要写进磁盘，然后磁盘也要找到对应的那条记录，然后再更新，整个过程IO成本、查找成本都很高。为了解决这个问题，MySQL采用了**WAL**（Write-Ahead Logging）技术
+
+具体来说，当有一条记录需要更新的时候，InnoDB引擎就会先把记录写到**redo log**里面，并更新内存，这个时候更新就算完成了。同时，InnoDB引擎会在适当的时候，将这个操作记录更新到磁盘里面，而这个更新往往是在系统比较空闲的时候做
+
+InnoDB的redo log是固定大小的，比如可以配置为一组4个文件，每个文件的大小是1GB，总共支持4GB大小的操作记录
+
+组成：redo log包括两部分：一个是内存中的日志缓冲(redo log buffer) ，另一个是磁盘上的日志文件(redo log file)
+
+<div align="center">
+	<img src="https://github.com/oneCoderMan/javastudy/blob/c80c79f5903109e56424a70d369b08b48cb7700a/notes/src/main/resources/mysql/pics/redo.png" alt="Editor" width="500">
+</div>
+
+write pos: 当前记录的位置，一边写一边后移
+
+checkpoint: 当前要擦除的位置(将 Checkpoint 之前的页刷新回磁盘)，也是往后推移并且循环的。
+
+运行过程：write pos 和 CheckPoint 之间的就是 redo log file 上还空着的部分，可以用来记录新的操作；如果 write pos 追上 CheckPoint，就表示 redo log file 满了，
+这时候不能再执行新的更新，得停下来先覆盖(擦掉)一些 redo log，把 CheckPoint 推进一下。
+
+CheckPoint的其它问题：Checkpoint每次需要刷新多少数据？每次从哪里取脏页？以及什么时间触发 Checkpoint？
+
+> 脏页:如果缓冲池中的页已经被修改了，但是还没有刷新到磁盘上，那么我们就称缓冲池中的这页是 ”脏页“
+
+| checkPoint类型     | 机制 | 备注              |
+|------------------|----|-----------------|
+| Sharp Checkpoint | 数据库关闭时将所有的脏页都刷新回磁盘 | 默认方式，参数 innodb_fast_shutdown=1    |
+| Fuzzy Checkpoin              | 只刷新一部分脏页，而不是刷新所有的脏页回磁盘 | InnoDB 存储引擎内部使用 |
+
+crash-safe: 有了 redo log，InnoDB 就可以保证即使数据库发生异常重启，之前提交的记录都不会丢失，这个能力称为 crash-safe。
+
+## binlog
+所在层次：Server层自己的日志
+
+>只依靠binlog是没有crash-safe能力的
+
+
+
+
+
+
 
 # 问题
 ## 题目
