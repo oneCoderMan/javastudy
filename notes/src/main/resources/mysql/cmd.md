@@ -1,8 +1,16 @@
 # 管理相关
-查看连接数
+## 查看连接数
 ```mysql
 show processlist
 ```
+
+## 查看binlog相关
+
+查看是否支持binlog及其存储路径
+```mysql
+show variables like '%log_bin%'
+```
+  
 
 # 建库表
 
