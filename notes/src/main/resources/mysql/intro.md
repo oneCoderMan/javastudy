@@ -37,6 +37,7 @@ MySQL 是一个开源关系型数据库管理系统，其主要通过表结构�
 # 0x02 MySQL基础
 * [架构之SQL语句执行过程](./arch.md)
 * [MySQL事务](./tx.md)
+* [MySQL索引](./index.md)
 
 # 0x03 MySQL实践
 

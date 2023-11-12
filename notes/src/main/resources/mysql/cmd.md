@@ -1,4 +1,4 @@
-# 管理相关
+# 1. 管理相关
 ## 查看连接数
 ```mysql
 show processlist
@@ -11,8 +11,18 @@ show processlist
 show variables like '%log_bin%'
 ```
   
+# 2. 事务相关
+## 查看隔离级别
+```mysql
+show variables like 'transaction_isolation';
+```
 
-# 建库表
+## 查看长事务连接
+```mysql
+select * from information_schema.innodb_trx where TIME_TO_SEC(timediff(now(),trx_started))>60
+```
+
+# 3. 建库表
 
 ## 建库
 ```mysql
