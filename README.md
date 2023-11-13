@@ -44,6 +44,7 @@
 [函数式编程](basicTech/src/main/java/com/java/study/basic/FunctionProgrammer.java) <br>
 [注解使用](notes/src/main/resources/javaCore/annotation.md) <br>
 [切面](notes/src/main/resources/javaCore/aspect.md)
+[枚举及应用]()
 
 # 文章推荐
 [20篇改变世界的白皮书](notes/src/main/resources/paper/20paper.md)
