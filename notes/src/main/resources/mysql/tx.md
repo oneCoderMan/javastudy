@@ -64,6 +64,12 @@ InnoDB里面每个事务有一个唯一的事务ID，叫作`transaction id`。
 
 也就是说，数据表中的一行记录，其实可能有多个版本(row)，每个版本有自己的`row trx_id`。
 
+下图就是一个记录被多个事务连续更新后的状态，三个虚线箭头，就是**undo log**
 
+<div align="center">
+	<img src="https://github.com/oneCoderMan/javastudy/blob/753450b66c435b953cb0797095a1e06ec5efe7dd/notes/src/main/resources/mysql/pics/tx3.png" alt="Editor" width="500">
+</div>
+
+>而V1、V2、V3并不是物理上真实存在的，而是每次需要的时候根据当前版本和undo log计算出来的。比如，需要V2的时候，就是通过V4依次执行U3、U2算出来。
 
 ## REF
