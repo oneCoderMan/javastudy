@@ -90,7 +90,7 @@ InnoDB为每个事务构造了一个数组，用来保存这个事务启动瞬�
 ### 数据版本可见性规则
 
 <div align="center">
-	<img src="" alt="Editor" width="500">
+	<img src="https://github.com/oneCoderMan/javastudy/blob/bade9e5d0eca2b393aba9811fb6714aac7a69cc9/notes/src/main/resources/mysql/pics/tx4.png" alt="Editor" width="500">
 </div>
 
 对于当前事务的启动瞬间来说，一个数据版本的row trx_id，有以下几种可能：
