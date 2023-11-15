@@ -124,6 +124,41 @@ update T set c=c+1 where ID=2;
   1. 如果redo log中事务是完整并且有commit标记，则故障恢复中直接提交
   2. 如果redo log中事务只有完整的prepare，则判断对应的事务 binlog 是否存在并完整：完整则提交。不完整则回滚事务。
 
+# 8. change buffer
+当需要更新一个数据页时，如果数据页在内存中就直接更新，而如果这个数据页还没有在内存中的话，在不影响数据一致性的前提下，
+InooDB会将这些更新操作缓存在`change buffer`中，这样就不需要从磁盘中读入这个数据页了。在下次查询需要访问这个数据页的时候，将数据页读入内存，
+然后执行change buffer中与这个页有关的操作。通过这种方式就能保证这个数据逻辑的正确性。
+> change buffer实际上它是可以持久化的数据，在内存中有拷贝，也会被写入到磁盘上
+
+触发merge时间：将change buffer中的操作应用到原数据页，得到最新结果的过程称为merge。除了访问这个数据页会触发merge外，系统有后台线程会定期merge。
+在数据库正常关闭（shutdown）的过程中，也会执行merge操作。
+
+change buffer的大小，可以通过参数`innodb_change_buffer_max_size`来动态设置。
+这个参数设置为50的时候，表示`change buffer`的大小最多只能占用`buffer pool`的50%。
+
+
+使用场景：
+1. 写多读少的业务(账单类、日志类)来说，页面在写完以后马上被访问到的概率比较小，此时change buffer的使用效果最好
+2. 假设一个业务的更新模式是写入之后马上会做查询，那么即使满足了条件，将更新先记录在change buffer，
+但之后由于马上要访问这个数据页，会立即触发merge过程。这样随机访问IO的次数不会减少，反而增加了change buffer的维护代价。所以，对于这种业务模式来说，change buffer反而起到了副作用。
+
+> merge的时候是真正进行数据更新的时刻，而`change buffer`的主要目的就是将记录的变更动作缓存下来，所以在一个数据页做merge之前，
+> `change buffer`记录的变更越多（也就是这个页面上要更新的次数越多），收益就越大。
+
+# 9. Buffer Pool
+在表上执行这个插入语句：`insert into t(id,k) values(id1,k1),(id2,k2);`
+假设当前k索引树的状态，查找到位置后，k1所在的数据页在内存(InnoDB buffer pool)中，k2所在的数据页不在内存中。
+如下图所示是带`change buffer`的更新状态图。
+
+<div align="center">
+	<img src="" alt="Editor" width="500">
+</div>
+
+
+<div align="center">
+	<img src="" alt="Editor" width="500">
+</div>
+
 ## 两个问题
 1. binlog是否完整究竟是怎么判定的？
 > binlog前面说过有三种模式，其中row模式binlog尾部会有XID event标记；statement格式的binlog末尾会有commit。
