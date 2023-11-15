@@ -146,18 +146,51 @@ change buffer的大小，可以通过参数`innodb_change_buffer_max_size`来动
 > `change buffer`记录的变更越多（也就是这个页面上要更新的次数越多），收益就越大。
 
 # 9. Buffer Pool
+
+## 带change buffer的写
 在表上执行这个插入语句：`insert into t(id,k) values(id1,k1),(id2,k2);`
 假设当前k索引树的状态，查找到位置后，k1所在的数据页在内存(InnoDB buffer pool)中，k2所在的数据页不在内存中。
 如下图所示是带`change buffer`的更新状态图。
 
 <div align="center">
-	<img src="" alt="Editor" width="500">
+	<img src="https://github.com/oneCoderMan/javastudy/blob/85f44fbfa01945e29286004a709188e6d8f3a015/notes/src/main/resources/mysql/pics/changbuffer1.png" alt="Editor" width="500">
 </div>
 
+它涉及了四个部分：内存、redo log（ib_log_fileX）、 数据表空间（t.ibd）、系统表空间（ibdata1）
+
+更新语句做了如下的操作（按照图中的数字顺序）
+1. Page 1在内存中，直接更新内存；
+2. Page 2没有在内存中，就在内存的`change buffer`区域，记录下“我要往Page 2插入一行”这个信息
+3. 将上述两个动作记入`redo log`中（图中3和4）。
+
+做完上面这些，事务就可以完成了。
+所以，你会看到，执行这条更新语句的成本很低，就是写了两处内存，
+然后写了一处磁盘（两次操作合在一起写了一次磁盘），而且还是顺序写的。
+同时，图中的两个虚线箭头，是后台操作，不影响更新的响应时间。
+
+## 带change buffer的读
+要执行 `select * from t where k in (k1, k2)`。
+这两个读请求的流程图如下：
 
 <div align="center">
-	<img src="" alt="Editor" width="500">
+	<img src="https://github.com/oneCoderMan/javastudy/blob/85f44fbfa01945e29286004a709188e6d8f3a015/notes/src/main/resources/mysql/pics/changbuffer2.png" alt="Editor" width="500">
 </div>
+
+> 读语句发生在更新语句后不久，内存中的数据都还在，那么此时的这两个读操作就与系统表空间
+> （ibdata1）和 redo log（ib_log_fileX）无关了
+
+1. 读Page 1的时候，直接从内存返回。
+WAL之后如果读数据，是不是一定要读盘，是不是一定要从redo log里面把数据更新以后才可以返回？
+其实是不用的。你可以看一下图3的这个状态，虽然磁盘上还是之前的数据，但是这里直接从内存返回结果，结果是正确的。
+
+2. 要读Page 2的时候，需要把Page 2从磁盘读入内存中，然后应用`change buffer`里面的操作日志，
+生成一个正确的版本并返回结果。
+
+可以看到，直到需要读Page 2的时候，这个数据页才会被读入内存。
+
+**redo log**主要节省的是随机写磁盘的IO消耗（转成顺序写）
+
+**change buffer**主要节省的则是随机读磁盘的IO消耗。
 
 ## 两个问题
 1. binlog是否完整究竟是怎么判定的？
