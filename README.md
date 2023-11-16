@@ -38,7 +38,9 @@
 ## 一些技巧
   * 消除多余的if-else [策略模式code](basicTech/src/main/java/com/java/study/designpattern/somtech/OptStrategyContext.java)
 
-## 策略模式
+## 模式
+[策略模式]() <br>
+[代理模式](notes/src/main/resources/desiginpattern/proxy.md)
 
 # Java+Spring基础
 [函数式编程](basicTech/src/main/java/com/java/study/basic/FunctionProgrammer.java) <br>
