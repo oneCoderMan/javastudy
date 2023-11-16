@@ -41,6 +41,7 @@ MySQL 是一个开源关系型数据库管理系统，其主要通过表结构�
 * [MySQL锁](./lock.md)
 
 # 0x03 MySQL实践
+* [索引失效的情况](./experiment/indexValid.md)
 
 
 # REF

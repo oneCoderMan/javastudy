@@ -45,6 +45,15 @@ CREATE TABLE IF NOT EXISTS `user_tbl`(
 INSERT INTO `user_tbl` (name, phone, submission_date) VALUES ("yijun", "14534567896", NOW());
 ```
 
+# 4. 创建索引
+## 字符串索引
+```mysql
+alter table `SUser` add index index1(email);
+# 选择前6个字符去索引
+alter table `SUser` add index index2(email(6));
+```
+
+
 
 
 
