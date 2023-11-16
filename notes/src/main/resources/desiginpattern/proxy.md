@@ -5,6 +5,10 @@
 
 # 2. 静态代理
 对目标对象的每个方法的增强都是手动完成的
+<div align="center">
+	<img src="https://github.com/oneCoderMan/javastudy/blob/6de5b04a392edb81df568c4bfc322a45cec4bd6c/notes/src/main/resources/desiginpattern/pics/proxy1.png" alt="Editor" width="600">
+</div>
+
 
 缺点：
 1. 非常不灵活（比如接口一旦新增加方法，目标对象和代理对象都要进行修改）
