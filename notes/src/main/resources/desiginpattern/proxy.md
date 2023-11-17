@@ -30,6 +30,8 @@
 ## 3.2 JDK动态代理
 在 Java 动态代理机制中`InvocationHandler`接口和`Proxy`类是核心。
 
+缺点：只能代理实现了接口的类
+
 ### 使用步骤
 1. 定义一个接口及其实现类
 2. 自定义`InvocationHandler`并重写`invoke`方法，
@@ -59,6 +61,40 @@ invoke() 方法有下面三个参数：
 3. args : 当前 method 方法的参数
 
 ## 3.2 CGLIB代理
+
+[CGLIB](https://github.com/cglib/cglib) (Code Generation Library)是一个基于[ASM](https://www.baeldung.com/java-asm)的字节码生成库，
+它允许我们在运行时对字节码进行修改和动态生成。CGLIB 通过继承方式实现代理。
+
+在 CGLIB 动态代理机制中`MethodInterceptor`接口和`Enhancer`类是核心。
+
+原理：CGLIB 动态代理是通过生成一个被代理类的子类来拦截被代理类的方法调用
+
+> 例如 Spring 中的 AOP 模块中：如果目标对象实现了接口，则默认采用 JDK 动态代理，
+> 否则采用 CGLIB 动态代理。
+
+## 使用步骤
+需要添加依赖
+```xml
+<dependency>
+  <groupId>cglib</groupId>
+  <artifactId>cglib</artifactId>
+  <version>3.3.0</version>
+</dependency>
+```
+1. 定义一个类
+2. 自定义`MethodInterceptor`并重写`intercept`方法，`intercept`用于拦截增强被代理类的方法，和`JDK`动态代理中的`invoke`方法类似
+3. 通过`Enhancer`类的`create()`创建代理类
+
+
+## 代码DEMO
+[写一个具体工作类](../../../../../basicTech/src/main/java/com/java/study/designpattern/proxy/cglibproxy/AliSmsService.java) <br>
+[自定义方法拦截器](../../../../../basicTech/src/main/java/com/java/study/designpattern/proxy/cglibproxy/DebugMethodInterceptor.java) <br>
+[获取代理类](../../../../../basicTech/src/main/java/com/java/study/designpattern/proxy/cglibproxy/CglibProxyFactory.java) <br>
+[客户端调用](../../../../../basicTech/src/main/java/com/java/study/designpattern/proxy/cglibproxy/CgClient.java)
+
+## 涉及类简介
+通过`Enhancer`类来动态获取被代理类，当代理类调用方法的时候，实际调用的是`MethodInterceptor`中的`intercept`方法。
+
 
 # REF
 [Java Guide代理模式](https://javaguide.cn/java/basis/proxy.html)

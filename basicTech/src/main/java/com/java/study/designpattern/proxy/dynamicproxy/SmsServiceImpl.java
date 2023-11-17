@@ -11,4 +11,10 @@ public class SmsServiceImpl implements SmsService {
         System.out.println("[jdk proxy] real object send message:" + message);
         return message;
     }
+
+    @Override
+    public String send2(String message) {
+        System.out.println("[jdk proxy] real object send message:" + message);
+        return null;
+    }
 }

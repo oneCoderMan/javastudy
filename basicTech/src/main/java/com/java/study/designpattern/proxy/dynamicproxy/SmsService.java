@@ -7,4 +7,6 @@ package com.java.study.designpattern.proxy.dynamicproxy;
  */
 public interface SmsService {
     String send(String message);
+
+    String send2(String message);
 }
