@@ -39,7 +39,7 @@
   * 消除多余的if-else [策略模式code](basicTech/src/main/java/com/java/study/designpattern/somtech/OptStrategyContext.java)
 
 ## 模式
-[策略模式]() <br>
+[策略模式](notes/src/main/resources/desiginpattern/strategy.md) <br>
 [代理模式](notes/src/main/resources/desiginpattern/proxy.md)
 
 # Java+Spring基础
