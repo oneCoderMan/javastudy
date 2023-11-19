@@ -2,6 +2,7 @@ package com.java.study;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
 /**
  * @Author： yijun
@@ -11,6 +12,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class BasicTechApplication {
     public static void main(String[] args) {
-        SpringApplication.run(BasicTechApplication.class, args);
+        ConfigurableApplicationContext run = SpringApplication.run(BasicTechApplication.class, args);
     }
 }
