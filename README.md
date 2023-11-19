@@ -48,8 +48,15 @@
 [切面](notes/src/main/resources/javaCore/aspect.md) <br>
 [枚举及应用](notes/src/main/resources/javaCore/enum.md) <br>
 
+# 08. 框架原理
+[Spring的一些注解](notes/src/main/resources/framework/spring/springannotation.md) <br>
+[SpringBoot基础](notes/src/main/resources/framework/springboot/basicboot.md)
+
 # 08. 编程实践
 [AOP+Redis延时双删](notes/src/main/resources/exp/aopredisdelay.md)
+
+# 09. 工具
+[idea常用快捷键](notes/src/main/resources/tool/ideashotkey.md)
 
 # 09. 文章推荐
 [20篇改变世界的白皮书](notes/src/main/resources/paper/20paper.md)
