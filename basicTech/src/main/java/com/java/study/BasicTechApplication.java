@@ -13,5 +13,6 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class BasicTechApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext run = SpringApplication.run(BasicTechApplication.class, args);
+        run.getBean("test");
     }
 }

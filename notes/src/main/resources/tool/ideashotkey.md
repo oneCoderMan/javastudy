@@ -5,3 +5,5 @@
 `command + fn + f12`: 查看当前类的结构（函数，变量）
 
 `option + command + u` 或者`右键 -> Diagrams`: 查看当前类的结构类图（继承关系）
+
+`option + command + b` 进入一个方法的实现
