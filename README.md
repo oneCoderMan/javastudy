@@ -59,8 +59,9 @@
 # 09. 工具
 [idea常用快捷键](notes/src/main/resources/tool/ideashotkey.md)
 
-# 09. 文章推荐
+# 10. 文章推荐
 [20篇改变世界的白皮书](notes/src/main/resources/paper/20paper.md)
+
 
 # REF
 1. readMe工具：https://github.com/ekalinin/github-markdown-toc
