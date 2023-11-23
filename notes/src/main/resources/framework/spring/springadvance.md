@@ -14,6 +14,8 @@
 `EnvironmentCapable` 提供环境配置的能力
 
 
+主要有如下一个重要实现类`AnnotationConfigApplicationContext`，这是一个比较经典的容器，
+基于Java的配置类创建Bean [使用和介绍](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/AnnotationConfigAppCtxDemo.java)
 
 主要的`ApplicationContext`的实现都组合（有成员变量）了`BeanFactory`的功能
 
@@ -21,7 +23,8 @@
 这是一个接口，表面上看接口只有`getBean`这个函数，实际上控制反转，依赖注入，Bean生命周期的各种
 功能都由它的实现类提供，
 
-它的一个重要实现类`DefaultListableBeanFactory`，
+它的一个重要实现类`DefaultListableBeanFactory`，[一些使用和介绍](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/SpringBeanFactoryDemo.java)
+
 
 # REF
 [B站-Spring视频](https://www.bilibili.com/video/BV1P44y1N7QG?p=4&vd_source=550dc9095f2a0980780a8fe0a239112e)

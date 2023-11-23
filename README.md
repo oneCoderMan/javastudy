@@ -34,6 +34,10 @@
 * [安装和原理](notes/src/main/resources/mysql/intro.md)
 * [常用命令](notes/src/main/resources/mysql/cmd.md)
 
+## Kafka
+
+* [安装和使用](notes/src/main/resources/kafka/install.md)
+
 # 06. 设计模式
 ## 一些技巧
   * 消除多余的if-else [策略模式code](basicTech/src/main/java/com/java/study/designpattern/somtech/OptStrategyContext.java)
