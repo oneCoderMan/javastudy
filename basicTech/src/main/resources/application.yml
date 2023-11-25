@@ -11,3 +11,6 @@ spring:
         max-wait: -1
         min-idle: 0
         max-idle: 8
+
+test:
+  value: beanCycle

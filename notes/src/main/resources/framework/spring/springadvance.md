@@ -25,6 +25,14 @@
 
 它的一个重要实现类`DefaultListableBeanFactory`，[一些使用和介绍](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/SpringBeanFactoryDemo.java)
 
+# 3. Bean的生命周期
+先构造方法 -> 依赖注入方法 ->  初始化（`@PostConstruct`）-> 销毁（`@PreDestroy`）
+
+[演示代码](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/springboot/beancycle/LifeCycleBean.java)
+
+针对Bean的生命周期各个阶段，Spring提供了不同的后处理器
+
+在BeanFactory中，有用到了模版方法，具体由一个案例了解，[BeanFactory模版模式mini](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/TemplateMethodTest.java)
 
 # REF
 [B站-Spring视频](https://www.bilibili.com/video/BV1P44y1N7QG?p=4&vd_source=550dc9095f2a0980780a8fe0a239112e)
