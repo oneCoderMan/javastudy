@@ -30,10 +30,22 @@
 
 [演示代码](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/springboot/beancycle/LifeCycleBean.java)
 
+# 4. Bean的后置处理器
 针对Bean的生命周期各个阶段，Spring提供了不同的后处理器
 
 在BeanFactory中，有用到了模版方法，具体由一个案例了解，[BeanFactory模版模式mini](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/TemplateMethodTest.java)
 
+Bean的常见后处理器测试及其使用，[代码](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/beanposttest/BeanPostTest.java)
+
+## AutowiredAnnotationBeanPostProcessor
+在Bean的组织过程中，Bean的后处理器`AutowiredAnnotationBeanPostProcessor`完成对`@Autowired`和`@Value` 注解的解析
+
+[Test Code](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/beanposttest/AutowiredBeanPostTest.java)
+
+
+
+
 # REF
 [B站-Spring视频](https://www.bilibili.com/video/BV1P44y1N7QG?p=4&vd_source=550dc9095f2a0980780a8fe0a239112e)
+[容器与Bean](https://mofan212.github.io/posts/Spring-Forty-Nine-Lectures-Container-And-Bean/)
 
