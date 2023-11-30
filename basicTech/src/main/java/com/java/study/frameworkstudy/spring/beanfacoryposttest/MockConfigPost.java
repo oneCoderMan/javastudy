@@ -33,8 +33,6 @@ public class MockConfigPost {
         // GenericApplicationContext 是一个干净的容器(没有加载过很多类，并且可以方便的进行Bean的注册 )
         GenericApplicationContext context = new GenericApplicationContext();
         context.registerBean("config", Config.class);
-        // 完成@ComponentScan，@Bean， @Import，@ImportResource注解的解析工作
-        // context.registerBean(ConfigurationClassPostProcessor.class);
 
         // 初始化容器
         context.refresh();

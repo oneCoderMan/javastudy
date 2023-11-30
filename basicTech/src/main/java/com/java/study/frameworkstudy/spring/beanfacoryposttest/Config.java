@@ -1,6 +1,7 @@
 package com.java.study.frameworkstudy.spring.beanfacoryposttest;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import com.java.study.frameworkstudy.spring.beanfacoryposttest.component.BFBean3;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -19,6 +20,10 @@ public class Config {
     @Bean
     public BFBean1 bfBean1() {
         return new BFBean1();
+    }
+
+    public BFBean3 bfBean3() {
+        return new BFBean3();
     }
 
     @Bean

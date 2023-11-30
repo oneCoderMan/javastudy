@@ -47,7 +47,9 @@ Bean的常见后处理器测试及其使用，[代码](../../../../../../basicTe
 
 比如`ConfigurationClassPostProcessor`可以完成`@ComponentScan`，`@Bean`， `@Import`，`@ImportResource`注解的解析工作
 
-可以通过代码模拟`ConfigurationClassPostProcessor`的工作过程，[demoMockCode](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/beanfacoryposttest/MockConfigPost.java)
+可以通过代码模拟`ConfigurationClassPostProcessor`的工作过程，[模拟ComponentScan注解](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/beanfacoryposttest/MockConfigPost.java)
+
+[模拟处理@Bean注解](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/beanfacoryposttest/MockBeanDeal.java)
 
 
 
