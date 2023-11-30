@@ -42,6 +42,12 @@ Bean的常见后处理器测试及其使用，[代码](../../../../../../basicTe
 
 [Test Code](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/beanposttest/AutowiredBeanPostTest.java)
 
+# 5. BeanFactory的后置处理器
+为BeanFactory提供扩展，[学习代码](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/beanfacoryposttest/AppTest.java)
+
+比如`ConfigurationClassPostProcessor`可以完成`@ComponentScan`，`@Bean`， `@Import`，`@ImportResource`注解的解析工作
+
+可以通过代码模拟`ConfigurationClassPostProcessor`的工作过程，[demoMockCode](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/beanfacoryposttest/MockConfigPost.java)
 
 
 
