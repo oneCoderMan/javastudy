@@ -67,6 +67,9 @@
 # 10. 文章推荐
 [20篇改变世界的白皮书](notes/src/main/resources/paper/20paper.md)
 
+# 11. 算法
+[基础算法介绍](notes/src/main/resources/algorithm/intro.md)
+
 
 # REF
 1. readMe工具：https://github.com/ekalinin/github-markdown-toc
