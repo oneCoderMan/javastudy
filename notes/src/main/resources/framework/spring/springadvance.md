@@ -51,9 +51,16 @@ Bean的常见后处理器测试及其使用，[代码](../../../../../../basicTe
 
 [模拟处理@Bean注解](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/beanfacoryposttest/MockBeanDeal.java)
 
+[模拟处理@Mapper注解](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/beanfacoryposttest/MockMapperDeal.java)
+
+问题：`@Mapper`注解是在接口上使用的，但根据前文内容可知，`@Mapper`被解析后在 Spring 容器中也存在与被标记的接口相关的`Bean`。
+那么那这些接口是怎么变成对象被 Spring 管理的呢？
+
+答案：这依赖于`MapperFactoryBean`将接口转换为对象
+
 
 
 # REF
-[B站-Spring视频](https://www.bilibili.com/video/BV1P44y1N7QG?p=4&vd_source=550dc9095f2a0980780a8fe0a239112e)
+[B站-Spring视频](https://www.bilibili.com/video/BV1P44y1N7QG?p=4&vd_source=550dc9095f2a0980780a8fe0a239112e) <br>
 [容器与Bean](https://mofan212.github.io/posts/Spring-Forty-Nine-Lectures-Container-And-Bean/)
 

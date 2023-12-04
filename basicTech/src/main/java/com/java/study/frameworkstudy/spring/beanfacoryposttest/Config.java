@@ -42,4 +42,20 @@ public class Config {
         return dataSource;
     }
 
+    // 下面的这个注解可以让Mapper1被注册为Bean，在@Mapper没有生效的时候
+//    @Bean
+//    public MapperFactoryBean<Mapper1> mapper1(SqlSessionFactory sqlSessionFactory) {
+//        MapperFactoryBean<Mapper1> factoryBean = new MapperFactoryBean<>(Mapper1.class);
+//        factoryBean.setSqlSessionFactory(sqlSessionFactory);
+//        return factoryBean;
+//    }
+
+//    @Bean
+//    public MapperFactoryBean<Mapper2> mapper2(SqlSessionFactory sqlSessionFactory) {
+//        MapperFactoryBean<Mapper2> factoryBean = new MapperFactoryBean<>(Mapper2.class);
+//        factoryBean.setSqlSessionFactory(sqlSessionFactory);
+//        return factoryBean;
+//    }
+
+
 }
