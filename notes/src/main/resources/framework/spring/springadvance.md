@@ -87,6 +87,7 @@ Bean的常见后处理器测试及其使用，[代码](../../../../../../basicTe
 * 依赖于后置处理器`@PostConstruct`提供的拓展功能
 * 相关接口`InitializingBean`的功能
 * 使用 `@Bean`注解中的属性`initMethod`进行指定
+
 当同时存在以上三种方式时，它们的执行顺序也将按照上述顺序进行执行
 
 [初始化演示](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/aware/BeanInitApp.java)
@@ -99,8 +100,9 @@ Bean的常见后处理器测试及其使用，[代码](../../../../../../basicTe
 * 依赖于后置处理器`@PreDestroy`提供的拓展功能
 * 相关接口`DisposableBean`的功能
 * 使用 `@Bean`注解中的属性`destroyMethod`进行指定
-  当同时存在以上三种方式时，它们的执行顺序也将按照上述顺序进行执行
-* 
+
+当同时存在以上三种方式时，它们的执行顺序也将按照上述顺序进行执行
+
 [销毁Bean演示](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/aware/BeanInitApp.java)
 
 
