@@ -13,6 +13,10 @@ public class ArrayTool {
         String inputString = "[[1,2],[3],[3],[]]";
         int[][] ints = strToArray(inputString);
         System.out.println(JsonUtil.toJson(ints));
+
+        String charInputStr = "[[\"1\",\"1\",\"1\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"0\",\"0\",\"0\",\"0\",\"0\"]]";
+        char[][] chats = strToCharArray(charInputStr);
+        System.out.println(JsonUtil.toJson(chats));
     }
 
     /**
@@ -25,6 +29,17 @@ public class ArrayTool {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             return objectMapper.readValue(inputString, int[][].class);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static char[][] strToCharArray(String inputString) {
+        // 使用 Jackson 解析字符串
+        ObjectMapper objectMapper = new ObjectMapper();
+        try {
+            return objectMapper.readValue(inputString, char[][].class);
         } catch (Exception e) {
             e.printStackTrace();
         }

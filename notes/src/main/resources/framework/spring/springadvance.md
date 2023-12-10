@@ -105,6 +105,19 @@ Bean的常见后处理器测试及其使用，[代码](../../../../../../basicTe
 
 [销毁Bean演示](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/aware/BeanInitApp.java)
 
+# 7. Scope
+Scope 用于指定 Bean 的作用范围，有如下五个取值：
+
+* singleton：单例（**默认值**）。容器启动时创建（未设置延迟），容器关闭时销毁
+* prototype：多例。每次使用时创建，不会自动销毁，需要调用`DefaultListableBeanFactory#destroyBean()` 进行销毁
+* request：作用于 Web 应用的请求范围。每次请求用到此 Bean 时创建，请求结束时销毁
+* session：作用于 Web 应用的会话范围。每个会话用到此 Bean 时创建，会话结束时销毁
+* application：作用于 Web 应用的 ServletContext。Web 容器用到此 Bean 时创建，容器关闭时销毁
+
+
+# 8. AOP
+[AOP学习](https://mofan212.github.io/posts/Spring-Forty-Nine-Lectures-AOP/)
+
 
 # REF
 [B站-Spring视频](https://www.bilibili.com/video/BV1P44y1N7QG?p=4&vd_source=550dc9095f2a0980780a8fe0a239112e) <br>
