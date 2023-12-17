@@ -117,6 +117,27 @@ Scope 用于指定 Bean 的作用范围，有如下五个取值：
 
 # 8. AOP
 [AOP学习](https://mofan212.github.io/posts/Spring-Forty-Nine-Lectures-AOP/)
+Spring中的AOP是依赖代理实现的，
+
+[切面基础](../../../../../../notes/src/main/resources/javaCore/aspect.md)
+
+切面有`aspect`和`advisor`两个概念:
+* `aspect`是多组通知（advice）和切点（pointcut）的组合，也是实际编码时使用的;
+* `advisor`则是更细粒度的切面，仅包含一个通知和切点，`aspect`在生效之前会被拆解成多个`advisor`。
+
+[advisor切面的使用](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/aspectdemo/AdvisorTest.java)
+
+## 切点匹配
+选择 `AspectJExpressionPointcut` 作为切点的实现，
+判断编写的 AspectJ 表达式是否与某一方法匹配可以使用其`matches()`方法。
+
+[切点匹配测试](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/aspectdemo/PointCutMatchTest.java)
+
+`@Transactional` 注解除了可以作用在方法上，还可以作用在类（或接口）上。
+在底层 `@Transactional` 注解的匹配使用到了 `StaticMethodMatcherPointcut`
+
+## 
+
 
 
 # REF
