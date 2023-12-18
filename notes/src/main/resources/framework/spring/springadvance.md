@@ -136,7 +136,35 @@ Spring中的AOP是依赖代理实现的，
 `@Transactional` 注解除了可以作用在方法上，还可以作用在类（或接口）上。
 在底层 `@Transactional` 注解的匹配使用到了 `StaticMethodMatcherPointcut`
 
-## 
+## aspect到advisor
+Spring 中存在一个名为 `AnnotationAwareAspectJAutoProxyCreator` 的 Bean 后置处理器
+
+作用：
+* 找到容器中所有的切面，针对高级切面，将其转换为低级切面；
+* 根据切面信息，利用 ProxyFactory 创建代理对象。
+
+[转换测试](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/aspectdemo/PointCreateTest.java)
+
+其中方法`findEligibleAdvisors`用于找到符合条件的切面类。低级切面直接添加，高级切面转换为低级切面再添加。
+
+另一个重要方法`wrapIfNecessary()`: 方法内部调用了`findEligibleAdvisors()` 方法，若 `findEligibleAdvisors()` 方法返回的集合不为空，
+则表示需要创建代理对象。
+
+## 创建代理时机
+创建代理的时机在两个地方：
+* Bean的依赖注入之前
+* Bean初始化完成之后
+
+时机二选一，不会重复创建代理对象
+
+[代理创建时机DEMO](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/spring/aspectdemo/CreateTimeTest.java)
+
+代理对象的创建时机：
+
+* 无循环依赖时，在 Bean 初始化阶段之后创建；
+* 有循环依赖时，在 Bean 实例化后、依赖注入之前创建，并将代理对象暂存于二级缓存。
+
+
 
 
 
