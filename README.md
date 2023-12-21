@@ -68,7 +68,8 @@
 [20篇改变世界的白皮书](notes/src/main/resources/paper/20paper.md)
 
 # 11. 算法
-[基础算法介绍](notes/src/main/resources/algorithm/intro.md)
+[基础算法介绍](notes/src/main/resources/algorithm/intro.md) <br>
+[微软算法题库](notes/src/main/resources/algorithm/microsoft.md)
 
 
 # REF

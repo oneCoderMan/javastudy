@@ -170,5 +170,6 @@ Spring 中存在一个名为 `AnnotationAwareAspectJAutoProxyCreator` 的 Bean �
 
 # REF
 [B站-Spring视频](https://www.bilibili.com/video/BV1P44y1N7QG?p=4&vd_source=550dc9095f2a0980780a8fe0a239112e) <br>
-[容器与Bean](https://mofan212.github.io/posts/Spring-Forty-Nine-Lectures-Container-And-Bean/)
+[容器与Bean](https://mofan212.github.io/posts/Spring-Forty-Nine-Lectures-Container-And-Bean/) <br>
+[AOP学习](https://mofan212.github.io/posts/Spring-Forty-Nine-Lectures-AOP/)
 

@@ -12,6 +12,8 @@
 
 # 4. 排序算法
 
+[堆和堆排序](./datastruct/heap.md)
+
 # 5. 图论算法
 DFS算法框架
 ```java
