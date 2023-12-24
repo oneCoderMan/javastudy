@@ -1,11 +1,13 @@
 package com.java.study.frameworkstudy.springboot.launch;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.lang.reflect.Method;
 import java.util.Arrays;
 
 /**
@@ -15,7 +17,7 @@ import java.util.Arrays;
  */
 @Configuration
 public class TestSpringApplication {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         SpringApplication spring = new SpringApplication(TestSpringApplication.class);
 
         // 创建并初始化 Spring 容器
@@ -29,6 +31,16 @@ public class TestSpringApplication {
                                     " 来源: " + context.getBeanFactory().getBeanDefinition(i)
                                     .getResourceDescription());
                         });
+
+        // 测试应用类型推断
+        Method deduceFromClasspath = WebApplicationType.class.getDeclaredMethod("deduceFromClasspath");
+        deduceFromClasspath.setAccessible(true);
+        System.out.println("\n应用类型为: " + deduceFromClasspath.invoke(null));
+
+        // 输出所有事件信息
+        System.out.println();
+        spring.addListeners(event -> System.out.println("\t事件为: " + event));
+
         context.close();
 
     }
