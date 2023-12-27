@@ -1,0 +1,4 @@
+# ????? key ????? $ ????
+com.java.study.frameworkstudy.springboot.autoconfig.AutoConfigTest3$MyImportSelector2=\
+  com.java.study.frameworkstudy.springboot.autoconfig.AutoConfigTest3.AutoConfiguration1, \
+  com.java.study.frameworkstudy.springboot.autoconfig.AutoConfigTest3.AutoConfiguration2

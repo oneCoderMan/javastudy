@@ -1,4 +1,4 @@
-# SpringBoot的启动过程
+# 0x01. SpringBoot的启动过程
 12大步骤，7大事件
 
 一个Boot主程序一般如下所示：
@@ -83,10 +83,28 @@ this.webApplicationType = WebApplicationType.deduceFromClasspath();
 这其中有异常，发布 `Application Failed` 事件7️⃣
 
 
+    
 
-### 其它
+# 0x02. 自动装配
+## 自动配置类原理
+[模拟自动装配代码](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/springboot/autoconfig/AutoConfigTest.java)
+
+使用注解@`Import({AutoConfiguration1.class, AutoConfiguration2.class})`
+
+如果有多个第三方配置类，难不成到一个个地导入？
+可以使用导入选择器`ImportSelector`，重写 `selectImports()` 方法，
+返回需要自动装配的`Bean`的全限定类名数组
+
+[ImportSelector演示代码](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/springboot/autoconfig/AutoConfigTest2.java)
+
+如果 `selectImports()` 方法返回的全限定类名可以从文件中读取，就更方便了。
+在当前项目的类路径下创建 `META-INF/spring.factories` 文件，
+约定一个 key，对应的 value 即为需要指定装配的 Bean
+
+[从文件读取自动装配的类](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/springboot/autoconfig/AutoConfigTest3.java)
 
 
+# 0x03. 
 
 # REF
 [B站视频](https://www.bilibili.com/video/BV1P44y1N7QG?p=120&vd_source=550dc9095f2a0980780a8fe0a239112e) <br>
