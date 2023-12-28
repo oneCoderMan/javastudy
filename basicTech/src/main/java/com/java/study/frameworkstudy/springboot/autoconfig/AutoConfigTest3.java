@@ -45,6 +45,9 @@ public class AutoConfigTest3 {
     static class MyImportSelector2 implements ImportSelector {
         @Override
         public String[] selectImports(AnnotationMetadata importingClassMetadata) {
+            // 如果是spring boot2.7以前，读取的建是如下信息
+            // SpringFactoriesLoader.loadFactoryNames(EnableAutoConfiguration.class, null);
+
             List<String> names = SpringFactoriesLoader
                     .loadFactoryNames(MyImportSelector2.class, null);
             return names.toArray(new String[0]);

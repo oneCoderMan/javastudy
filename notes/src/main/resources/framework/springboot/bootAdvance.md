@@ -103,6 +103,18 @@ this.webApplicationType = WebApplicationType.deduceFromClasspath();
 
 [从文件读取自动装配的类](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/springboot/autoconfig/AutoConfigTest3.java)
 
+第三方与本项目出现同名Bean的时候通过
+`DeferredImportSelector`和`@ConditionalOnMissingBean`解决Bean冲突覆盖问题
+
+## AOP的自动配置
+[AOP自动配置演示代码](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/springboot/autoconfig/TestAopConfig.java)
+
+## 数据库相关的自动配置
+[数据库相关的自动配置](../../../../../../basicTech/src/main/java/com/java/study/frameworkstudy/springboot/autoconfig/TestDatasourceConfig.java)
+
+## 自定义配置类
+
+
 
 # 0x03. 
 
