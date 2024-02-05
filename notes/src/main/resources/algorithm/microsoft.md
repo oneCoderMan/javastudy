@@ -7,7 +7,7 @@
 
 [236.二叉树的最近公共祖先](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/Lc236.java)
 
-[](../../../../../)
+[124.二叉树中的最大路径和](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202402/Lc124.java)
 
 [](../../../../../)
 

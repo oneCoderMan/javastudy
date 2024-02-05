@@ -4,6 +4,8 @@ logging:
   level:
     root: info
 spring:
+  main:
+    allow-bean-definition-overriding: true
   redis:
     port: 6379
     host: 192.168.1.105

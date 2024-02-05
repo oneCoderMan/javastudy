@@ -1,3 +1,7 @@
+# 0. SpringBoot 源码搭建
+从Github下载源码：[源码地址](https://github.com/spring-projects/spring-boot/releases/tag/v2.7.7)
+
+
 # 1. SpringBoot基础
 
 ## 1.1 starter介绍
@@ -20,7 +24,7 @@ SpringBoot官方提供了许多依赖启动，可以[点击查看](https://docs.
 
 ## 1.2 自动配置
 自动配置： 根据添加的Jar包依赖，`SpringBoot`会自动将一些配置类的`Bean`注册进入IOC容器，
-在需要的地方使用`@autowired`或者`@resource`注解来使用它
+在需要的地方使用`@autowired`或者`@Resource`注解来使用它
 
 需要了解的两个问题：
 1. SpringBoot如何进行自动装配的？
@@ -38,10 +42,22 @@ SpringBoot官方提供了许多依赖启动，可以[点击查看](https://docs.
 ```
 
 #### SpringBootConfiguration
-其中`@SpringBootConfiguration`包装了`@Configuration`，表明该类是一个配置类
+其中`@SpringBootConfiguration`包装了`@Configuration`，表明该类是一个配置类，会被Spring的组件扫描器扫到
+
+```java
+@Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
+@Configuration
+@Indexed
+public @interface SpringBootConfiguration {
+    
+}
+```
 
 #### EnableAutoConfiguration
-`@EnableAutoConfiguration`启动自动配置功能
+`@EnableAutoConfiguration`启动自动配置功能，借助`@Import`功能来收集所有
+符合自动配置条件的Bean定义，并加载到IoC容器
 
 可以看到该注解也是一个组合注解
 ```java
