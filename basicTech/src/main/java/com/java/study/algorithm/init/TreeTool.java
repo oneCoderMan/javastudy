@@ -51,7 +51,7 @@ public class TreeTool {
 
     }
 
-    private static void prePrintTree(TreeNode node) {
+    public static void prePrintTree(TreeNode node) {
         if (node == null) {
             return;
         }
