@@ -19,9 +19,28 @@
 
 [33.搜索旋转排序数组](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202402/Lc33.java)
 
-[](../../../../../)
+[151.翻转字符串里的单词](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202402/Lc151.java)
+
+[560.和为K的子数组](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202402/Lc560.java)
+
+[22.括号生成](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202402/Lc22.java)
+
+[4.寻找两个正序数组的中位数](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202402/Lc4.java)
+
+[48.旋转图像](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202402/Lc48.java)
+
+[103. 二叉树的锯齿形层次遍历](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc103.java)
+
+[25.K 个一组翻转链表](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc25.java)
+
+[8.字符串转换整数 (atoi)](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc08.java)
+
+[15.三数之和](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc15.java)
+
+[46.全排列](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc46.java)
 
 [](../../../../../)
+
 [](../../../../../)
 
 [](../../../../../)
