@@ -1,0 +1,34 @@
+# 1. 工厂模式简介
+简单工厂模式是一种**创建型设计模式**
+
+# 2. 简单工厂模式
+在了解工厂方法模式之前，需要先了解“简单工厂”模式进，但并不属于23种设计模式之一，更多的是一种编程习惯。
+
+简单工厂模式的核心思想是将产品的创建过程封装在一个工厂类中，把创建对象的流程集中在这个工厂类里面。
+
+类图如下：
+
+<div align="center">
+	<img src="https://github.com/oneCoderMan/javastudy/blob/e3f2a65a318cbd6c960713988f8cb70f79256d99/notes/src/main/resources/desiginpattern/pics/simpleFactory.png" alt="Editor" width="500">
+</div>
+
+简单工厂类简化了客户端操作，客户端可以调用工厂方法来获取具体产品，而无需直接与具体产品类交互，降低了耦合，但是有一个很大的问题就是不够灵活，
+如果需要添加新的产品，就需要修改工厂类的代码。
+
+<div align="center">
+	<img src="https://github.com/oneCoderMan/javastudy/blob/6a3c3eb951e33ac8a1b74a45958051c8a228eead/notes/src/main/resources/desiginpattern/pics/abstractFacroty.png" alt="Editor" width="500">
+</div>
+
+
+
+
+
+## 3. 工厂方法模式
+工厂方法模式引入了抽象工厂和具体工厂的概念，每个具体工厂只负责创建一个具体产品，
+添加新的产品只需要添加新的工厂类而无需修改原来的代码，这样就使得产品的生产更加灵活，支持扩展，符合开闭原则。
+
+类图如下：
+
+# REF
+[工厂模式](https://github.com/youngyangyang04/kama-DesignPattern/blob/main/DesignPattern/2-%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F.md)
+
