@@ -18,10 +18,10 @@
 因此，组合模式的类图如下所示：
 
 <div align="center">
-	<img alt="Editor" width="800" src="" >
+	<img alt="Editor" width="800" src="https://github.com/oneCoderMan/javastudy/blob/ec2571c63c937c7641d7fbbbd04116fbefcfea1b/notes/src/main/resources/desiginpattern/pics/composite.png" >
 </div>
 
-
+开闭原则: 无需更改现有代码，你就可以在应用中添加新元素，使其成为对象树的一部分。
 
 # REF
 [深入理解设计模式-组合模式](https://refactoringguru.cn/design-patterns/composite)
