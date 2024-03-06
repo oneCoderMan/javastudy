@@ -9,7 +9,7 @@
 类图如下：
 
 <div align="center">
-	<img src="https://github.com/oneCoderMan/javastudy/blob/e3f2a65a318cbd6c960713988f8cb70f79256d99/notes/src/main/resources/desiginpattern/pics/simpleFactory.png" alt="Editor" width="500">
+	<img src="https://github.com/oneCoderMan/javastudy/blob/e3f2a65a318cbd6c960713988f8cb70f79256d99/notes/src/main/resources/desiginpattern/pics/simpleFactory.png" alt="Editor" width="800">
 </div>
 
 简单工厂类简化了客户端操作，客户端可以调用工厂方法来获取具体产品，而无需直接与具体产品类交互，降低了耦合，但是有一个很大的问题就是不够灵活，
@@ -22,7 +22,7 @@
 
 类图如下：
 <div align="center">
-	<img src="https://github.com/oneCoderMan/javastudy/blob/7bf457f36db706bbaf143afe227607a0d6e96051/notes/src/main/resources/desiginpattern/pics/factoryMethod.png" alt="Editor" width="500">
+	<img src="https://github.com/oneCoderMan/javastudy/blob/7bf457f36db706bbaf143afe227607a0d6e96051/notes/src/main/resources/desiginpattern/pics/factoryMethod.png" alt="Editor" width="800">
 </div>
 
 ## 4. 抽象工厂模式
@@ -45,6 +45,6 @@
 # REF
 [工厂模式](https://github.com/youngyangyang04/kama-DesignPattern/blob/main/DesignPattern/2-%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F.md)
 
-[深入理解策略模式-工厂方法](https://refactoring.guru/design-patterns/factory-method)
+[深入理解设计模式-工厂方法](https://refactoring.guru/design-patterns/factory-method)
 
-[深入理解策略模式-抽象工厂方法](https://refactoringguru.cn/design-patterns/abstract-factory)
+[深入理解设计模式-抽象工厂方法](https://refactoringguru.cn/design-patterns/abstract-factory)
