@@ -15,20 +15,20 @@
 简单工厂类简化了客户端操作，客户端可以调用工厂方法来获取具体产品，而无需直接与具体产品类交互，降低了耦合，但是有一个很大的问题就是不够灵活，
 如果需要添加新的产品，就需要修改工厂类的代码。
 
-<div align="center">
-	<img src="https://github.com/oneCoderMan/javastudy/blob/6a3c3eb951e33ac8a1b74a45958051c8a228eead/notes/src/main/resources/desiginpattern/pics/abstractFacroty.png" alt="Editor" width="500">
-</div>
-
-
-
-
 
 ## 3. 工厂方法模式
-工厂方法模式引入了抽象工厂和具体工厂的概念，每个具体工厂只负责创建一个具体产品，
+工厂方法(Factory Method) 模式引入了抽象工厂和具体工厂的概念，每个具体工厂只负责创建一个具体产品，
 添加新的产品只需要添加新的工厂类而无需修改原来的代码，这样就使得产品的生产更加灵活，支持扩展，符合开闭原则。
 
 类图如下：
+<div align="center">
+	<img src="https://github.com/oneCoderMan/javastudy/blob/7bf457f36db706bbaf143afe227607a0d6e96051/notes/src/main/resources/desiginpattern/pics/factoryMethod.png" alt="Editor" width="500">
+</div>
+
+## 4. 抽象工厂模式
+
 
 # REF
 [工厂模式](https://github.com/youngyangyang04/kama-DesignPattern/blob/main/DesignPattern/2-%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F.md)
 
+[深入理解策略模式-工厂方法](https://refactoring.guru/design-patterns/factory-method)
