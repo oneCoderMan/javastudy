@@ -44,10 +44,12 @@
 
 ## 模式
 [策略模式](notes/src/main/resources/desiginpattern/strategy.md) <br>
+[状态模式](notes/src/main/resources/desiginpattern/state.md) <br>
 [代理模式](notes/src/main/resources/desiginpattern/proxy.md) <br>
 [模版方法模式](notes/src/main/resources/desiginpattern/template.md) <br>
 [工厂模式](notes/src/main/resources/desiginpattern/factory.md) <br>
-[组合模式](notes/src/main/resources/desiginpattern/composition.md)
+[组合模式](notes/src/main/resources/desiginpattern/composition.md) <br>
+
 
 # 07. Java+Spring基础
 [函数式编程](basicTech/src/main/java/com/java/study/basic/FunctionProgrammer.java) <br>

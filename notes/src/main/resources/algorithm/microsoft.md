@@ -39,7 +39,7 @@
 
 [46.全排列](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc46.java)
 
-[](../../../../../)
+[98.验证二叉搜索树](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc98.java)
 
 [](../../../../../)
 
