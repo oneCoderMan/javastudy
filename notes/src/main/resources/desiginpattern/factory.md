@@ -26,9 +26,25 @@
 </div>
 
 ## 4. 抽象工厂模式
+在工厂方法模式中，每个具体工厂只负责创建单一的产品。
+但是如果有多类产品呢，抽象工厂模式可以确保一系列相关的产品被一起创建，这些产品能够相互配合使用
+
+类图如下：
+<div align="center">
+	<img src="https://github.com/oneCoderMan/javastudy/blob/7eb9bbed6dfa940da1c34f9b2b36ef5ecf4ecb26/notes/src/main/resources/desiginpattern/pics/abstractF.png" alt="Editor" width="800">
+</div>
+
+你正在开发一款家具商店模拟器。 你的代码中包括一些类， 用于表示：
+1. 一系列相关产品， 例如 椅子`Chair` 、 沙发`Sofa`和咖啡桌`Coffee Table`
+2. 系列产品的不同变体。 例如， 你可以使用 `现代Modern` 、`维多利亚Victorian` 、`装饰风艺术Art Deco`等风格生成 椅子 、沙发和 咖啡桌 。
+
+你需要设法单独生成每件家具对象， 这样才能确保其风格一致。
+
 
 
 # REF
 [工厂模式](https://github.com/youngyangyang04/kama-DesignPattern/blob/main/DesignPattern/2-%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F.md)
 
 [深入理解策略模式-工厂方法](https://refactoring.guru/design-patterns/factory-method)
+
+[深入理解策略模式-抽象工厂方法](https://refactoringguru.cn/design-patterns/abstract-factory)
