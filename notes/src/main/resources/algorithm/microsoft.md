@@ -41,6 +41,18 @@
 
 [98.验证二叉搜索树](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc98.java)
 
+[5.最长回文子串](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc05.java)
+
+[141.环形链表](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc141.java)
+
+[121.买卖股票的最佳时机](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc121.java)
+
+[](../../../../../)
+
+[](../../../../../)
+
+[](../../../../../)
+
 [](../../../../../)
 
 [](../../../../../)
@@ -49,6 +61,7 @@
 
 [](../../../../../)
 
+[](../../../../../)
 
 
 
