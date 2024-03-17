@@ -47,6 +47,16 @@
 
 [121.买卖股票的最佳时机](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc121.java)
 
+[32.最长有效括号](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc32.java)
+
+[94.二叉树的中序遍历](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc94.java)
+
+[752.打开转盘锁](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc752.java)
+
+[21.合并两个有序链表](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc21.java)
+
+[72.编辑距离](../../../../../)
+
 [](../../../../../)
 
 [](../../../../../)
