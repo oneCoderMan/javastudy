@@ -55,13 +55,21 @@
 
 [21.合并两个有序链表](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc21.java)
 
-[72.编辑距离](../../../../../)
+[72.编辑距离](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc72.java)
 
-[](../../../../../)
+[93.复原 IP 地址](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc93.java)
 
-[](../../../../../)
+[41.缺失的第一个正数](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc41.java)
 
-[](../../../../../)
+[20.有效的括号](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc20.java)
+
+[210.课程表 II](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc210.java)
+
+[240.搜索二维矩阵 II](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc240.java)
+
+[39.组合总和](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc39.java)
+
+[168.Excel表列名称](../../../../../)
 
 [](../../../../../)
 
