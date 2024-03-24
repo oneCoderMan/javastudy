@@ -69,9 +69,17 @@
 
 [39.组合总和](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc39.java)
 
-[168.Excel表列名称](../../../../../)
+[168.Excel表列名称](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc168.java)
 
-[](../../../../../)
+[47.全排列 II](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc47.java)
+
+[543.二叉树的直径](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc543.java)
+
+[91.解码方法](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc91.java)
+
+[110.平衡二叉树](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc110.java)
+
+[34.在排序数组中查找元素的第一个和最后一个位置](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc34.java)
 
 [](../../../../../)
 
