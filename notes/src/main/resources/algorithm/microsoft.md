@@ -81,6 +81,24 @@
 
 [34.在排序数组中查找元素的第一个和最后一个位置](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc34.java)
 
+[152.乘积最大子数组](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc152.java)
+
+[239.滑动窗口最大值](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc239.java)
+
+[142.环形链表 II](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc142.java)
+
+[415.字符串相加](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc415.java)
+
+[138.复制带随机指针的链表](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc138.java)
+
+[468.验证IP地址](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc468.java)
+
+[](../../../../../)
+
+[](../../../../../)
+
+[](../../../../../)
+
 [](../../../../../)
 
 [](../../../../../)
