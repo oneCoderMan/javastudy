@@ -41,6 +41,7 @@ public class Lc468 {
     }
 
     private boolean isIpv6(String queryIP) {
+        // 注意需要保留空字符串
         String[] split = queryIP.split(":", -1);
         if (split.length != 8) {
             return false;

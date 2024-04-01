@@ -93,6 +93,22 @@
 
 [468.验证IP地址](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc468.java)
 
+[64.最小路径和](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc64.java)
+
+[224.基本计算器](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc224.java)
+
+[24.两两交换链表中的节点](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc24.java)
+
+[273.整数转换英文表示](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/Lc273.java)
+
+[LCR 170.交易逆序对的总数](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202403/LCR170.java)
+
+[](../../../../../)
+
+[](../../../../../)
+
+[](../../../../../)
+
 [](../../../../../)
 
 [](../../../../../)
