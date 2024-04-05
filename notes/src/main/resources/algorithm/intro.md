@@ -6,6 +6,8 @@
 
 [Java中的队列](./datastruct/queue.md)
 
+[Java中的优先队列](./datastruct/priority_queue.md)
+
 # 3. 数组
 [704-二分查找](./array/binaryQuery.md)
 
