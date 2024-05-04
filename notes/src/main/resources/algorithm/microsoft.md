@@ -117,11 +117,11 @@
 
 [105.从前序与中序遍历序列构造二叉树](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202404/Lc105.java)
 
-[](../../../../../)
+[143.重排链表](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202405/Lc143.java)
 
-[](../../../../../)
+[54.螺旋矩阵](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202405/Lc54.java)
 
-[](../../../../../)
+[283.移动零](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202405/Lc283.java)
 
 [](../../../../../)
 
