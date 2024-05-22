@@ -123,6 +123,26 @@
 
 [283.移动零](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202405/Lc283.java)
 
+[227.基本计算器 II](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202405/Lc227.java)
+
+[347.前K个高频元素](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202405/Lc347.java)
+
+[31.下一个排列](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202405/Lc31.java)
+
+[](../../../../../)
+
+[](../../../../../)
+
+[](../../../../../)
+
+[](../../../../../)
+
+[](../../../../../)
+
+[](../../../../../)
+
+[](../../../../../)
+
 [](../../../../../)
 
 [](../../../../../)
