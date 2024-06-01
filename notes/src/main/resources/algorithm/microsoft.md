@@ -129,15 +129,15 @@
 
 [31.下一个排列](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202405/Lc31.java)
 
-[](../../../../../)
+[23.合并K个排序链表](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202405/Lc23.java)
 
-[](../../../../../)
+[208.实现 Trie (前缀树)](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202405/Lc208.java)
 
-[](../../../../../)
+[155.最小栈](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202405/Lc155.java)
 
-[](../../../../../)
+[92.反转链表 II](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202405/Lc92.java)
 
-[](../../../../../)
+[189.轮转数组](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202405/Lc189.java)
 
 [](../../../../../)
 
