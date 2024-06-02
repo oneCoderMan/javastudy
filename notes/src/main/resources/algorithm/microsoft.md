@@ -139,6 +139,18 @@
 
 [189.轮转数组](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202405/Lc189.java)
 
+[386.字典序排数](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202406/Lc386.java)
+
+[88.合并两个有序数组](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202406/Lc88.java)
+
+[89.格雷编码](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202406/Lc89.java)
+
+[384.打乱数组](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202406/Lc384.java)
+
+[160.相交链表](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202406/Lc160.java)
+
+[62.不同路径](../../../../../)
+
 [](../../../../../)
 
 [](../../../../../)
