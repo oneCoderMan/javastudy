@@ -149,11 +149,11 @@
 
 [160.相交链表](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202406/Lc160.java)
 
-[62.不同路径](../../../../../)
+[62.不同路径](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202406/Lc62.java)
 
-[](../../../../../)
+[486.预测赢家](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202406/Lc486.java)
 
-[](../../../../../)
+[42.接雨水](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202406/Lc42.java)
 
 [](../../../../../)
 
