@@ -1,8 +1,6 @@
 package org.springframework.boot;
 
 import org.springframework.boot.context.config.ConfigDataEnvironmentPostProcessor;
-import org.springframework.boot.env.RandomValuePropertySourceEnvironmentPostProcessor;
-import org.springframework.boot.logging.DeferredLog;
 import org.springframework.boot.logging.DeferredLogs;
 
 /**
@@ -27,8 +25,8 @@ public class EnvStep5Test {
         env.getPropertySources().forEach(System.out::println);
         System.out.println(env.getProperty("author.name"));
 
-        RandomValuePropertySourceEnvironmentPostProcessor processor2 =
-                new RandomValuePropertySourceEnvironmentPostProcessor(new DeferredLog());
-        processor2.postProcessEnvironment(env, app);
+//        RandomValuePropertySourceEnvironmentPostProcessor processor2 =
+//                new RandomValuePropertySourceEnvironmentPostProcessor(new DeferredLog());
+//        processor2.postProcessEnvironment(env, app);
     }
 }

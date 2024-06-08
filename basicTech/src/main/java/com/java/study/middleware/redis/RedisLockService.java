@@ -1,11 +1,11 @@
 package com.java.study.middleware.redis;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.data.redis.core.script.RedisScript;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.Collections;
 import java.util.concurrent.TimeUnit;
 
@@ -24,7 +24,7 @@ public class RedisLockService {
     private static final RedisScript<String> COMPARE_AND_DELETE =
             new DefaultRedisScript<>(COMPARE_AND_DELETE_CMD, String.class);
 
-    @Resource
+    @Autowired
     private StringRedisTemplate stringRedisTemplate;
 
     private ThreadLocal<String> threadLocal = new ThreadLocal<>();

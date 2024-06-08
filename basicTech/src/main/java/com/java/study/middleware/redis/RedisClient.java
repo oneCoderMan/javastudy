@@ -1,11 +1,11 @@
 package com.java.study.middleware.redis;
 
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -31,7 +31,7 @@ import java.util.concurrent.TimeUnit;
  */
 @Service
 public class RedisClient {
-    @Resource
+    @Autowired
     private StringRedisTemplate stringRedisTemplate;
 
     /**

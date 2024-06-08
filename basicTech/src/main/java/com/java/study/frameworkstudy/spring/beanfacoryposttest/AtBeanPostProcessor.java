@@ -1,6 +1,5 @@
 package com.java.study.frameworkstudy.spring.beanfacoryposttest;
 
-import lombok.SneakyThrows;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.beans.factory.support.AbstractBeanDefinition;
@@ -14,6 +13,7 @@ import org.springframework.core.type.classreading.CachingMetadataReaderFactory;
 import org.springframework.core.type.classreading.MetadataReader;
 import org.springframework.util.StringUtils;
 
+import java.io.IOException;
 import java.util.Set;
 
 /**
@@ -22,10 +22,15 @@ import java.util.Set;
  * @Description
  */
 public class AtBeanPostProcessor implements BeanDefinitionRegistryPostProcessor {
-    @SneakyThrows
+    // @SneakyThrows
     public void postProcessBeanDefinitionRegistry(BeanDefinitionRegistry registry) throws BeansException {
         CachingMetadataReaderFactory factory = new CachingMetadataReaderFactory();
-        MetadataReader reader = factory.getMetadataReader(new ClassPathResource("com/java/study/frameworkstudy/spring/beanfacoryposttest/Config.class"));
+        MetadataReader reader = null;
+        try {
+            reader = factory.getMetadataReader(new ClassPathResource("com/java/study/frameworkstudy/spring/beanfacoryposttest/Config.class"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         Set<MethodMetadata> methods = reader.getAnnotationMetadata().getAnnotatedMethods(Bean.class.getName());
         for (MethodMetadata method : methods) {
             System.out.println(method);
