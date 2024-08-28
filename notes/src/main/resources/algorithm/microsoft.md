@@ -155,6 +155,30 @@
 
 [42.接雨水](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202406/Lc42.java)
 
+[82.删除排序链表中的重复元素 II](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202406/Lc82.java)
+
+[567.字符串的排列](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202406/Lc567.java)
+
+[104.二叉树的最大深度](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202406/Lc104.java)
+
+[679. 24点游戏](../../../../../)
+
+[](../../../../../)
+
+[](../../../../../)
+
+[](../../../../../)
+
+[](../../../../../)
+
+[](../../../../../)
+
+[](../../../../../)
+
+[](../../../../../)
+
+[](../../../../../)
+
 [](../../../../../)
 
 [](../../../../../)
