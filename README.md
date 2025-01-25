@@ -66,18 +66,20 @@
 [SpringBoot基础](notes/src/main/resources/framework/springboot/basicboot.md) <br>
 [SpringBoot原理](notes/src/main/resources/framework/springboot/bootAdvance.md) <br>
 
-# 08. 编程实践
+# 09. 编程实践
 [AOP+Redis延时双删](notes/src/main/resources/exp/aopredisdelay.md) <br>
 
 [生产者消费者实例](basicTech/src/main/java/com/java/study/idGenerator/snowFlake/IdGenerator.java)
 
-# 09. 工具
+[通用限流工具](notes/src/main/resources/exp/ratelimit.md)
+
+# 10. 工具
 [idea常用快捷键](notes/src/main/resources/tool/ideashotkey.md)
 
-# 10. 文章推荐
+# 11. 文章推荐
 [20篇改变世界的白皮书](notes/src/main/resources/paper/20paper.md)
 
-# 11. 算法
+# 12. 算法
 [基础算法介绍](notes/src/main/resources/algorithm/intro.md) <br>
 [微软算法题库](notes/src/main/resources/algorithm/microsoft.md)
 
