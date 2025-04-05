@@ -12,7 +12,7 @@
 * [Retry重试工具类](basicTech/src/main/java/com/java/study/utils/RetryUtil.java)
 * [LocalDateTimeUtil工具类](basicTech/src/main/java/com/java/study/utils/LocalDateTimeUtil.java)
 * [redis分布式锁](basicTech/src/main/java/com/java/study/middleware/redis/RedisLockService.java)
-* [ES客户端读取工具](basicTech/src/main/java/com/java/study/middleware/redis/RedisLockService.java)
+* [ES客户端读取工具](basicTech/src/main/java/com/java/study/middleware/es/EsClientTest.java)
 
 # 04. ID生成器
 * 参考文章<br>
