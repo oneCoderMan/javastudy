@@ -163,9 +163,7 @@
 
 [679. 24点游戏](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202504/Lc679.java)
 
-[1444. 切披萨的方案数](../../../../../)
-
-[718. 最长重复子数组](../../../../../)
+[718. 最长重复子数组](../../../../../basicTech/src/main/java/com/java/study/algorithm/microsoft/m202504/Lc718.java)
 
 [198. 打家劫舍](../../../../../)
 
